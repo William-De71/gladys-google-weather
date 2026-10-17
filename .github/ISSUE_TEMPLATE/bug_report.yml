@@ -1,0 +1,49 @@
+name: Bug report
+description: Something does not work as described in the documentation.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem. Never paste your API key: the logs of the integration never show it, but check before posting.
+  - type: input
+    id: gladys-version
+    attributes:
+      label: Gladys version
+      description: Settings → System.
+      placeholder: '5.2.1'
+    validations:
+      required: true
+  - type: input
+    id: integration-version
+    attributes:
+      label: Integration version
+      description: Integrations → Google Weather, or Settings → Supervision.
+      placeholder: '0.1.0'
+    validations:
+      required: true
+  - type: input
+    id: google-setup
+    attributes:
+      label: Google Cloud setup and location
+      description: Billing account attached, Weather API enabled, key restrictions, and the country of the house (coverage and alerts vary by country).
+      placeholder: 'Billing on, Weather API enabled, key restricted to the Weather API, France'
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Logs of the integration (Settings → Supervision): include the result of **Test the API key** (integration configuration) and the Weather API error if any. In developer mode only, `DEBUG=gladys-integration-sdk` adds the SDK debug logs.
+      render: text

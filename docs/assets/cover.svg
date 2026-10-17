@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="534" viewBox="0 0 800 534">
+  <!-- Cover of the Google Weather integration for Gladys Assistant (illustration,
+       no Google logo). Built into cover.jpg by scripts/build-cover.sh. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2a4a"/>
+      <stop offset="1" stop-color="#2a6cb3"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd54f" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd54f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="curve" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4f8cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#4f8cff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="534" fill="url(#sky)"/>
+
+  <!-- sun behind a cloud -->
+  <circle cx="225" cy="170" r="150" fill="url(#sunGlow)"/>
+  <circle cx="225" cy="170" r="62" fill="#ffca28"/>
+  <g stroke="#ffca28" stroke-width="10" stroke-linecap="round">
+    <path d="M225 72 v-24 M225 268 v24 M127 170 h-24 M323 170 h24"/>
+    <path d="M156 101 l-17 -17 M294 239 l17 17 M156 239 l-17 17 M294 101 l17 -17"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="210" cy="232" r="48"/>
+    <circle cx="272" cy="208" r="62"/>
+    <circle cx="330" cy="240" r="42"/>
+    <rect x="162" y="232" width="210" height="50" rx="25"/>
+  </g>
+  <!-- rain drops -->
+  <g fill="#8ec5ff">
+    <path d="M205 305 q8 14 0 22 q-8 -8 0 -22z"/>
+    <path d="M255 315 q8 14 0 22 q-8 -8 0 -22z"/>
+    <path d="M305 305 q8 14 0 22 q-8 -8 0 -22z"/>
+  </g>
+
+  <!-- hourly card -->
+  <rect x="434" y="86" width="320" height="214" rx="20" fill="#000000" opacity="0.25"/>
+  <rect x="430" y="78" width="320" height="214" rx="20" fill="#ffffff"/>
+  <text x="456" y="118" font-family="DejaVu Sans, Arial, sans-serif" font-size="20" font-weight="bold" fill="#1d3557">14°</text>
+  <text x="500" y="118" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#5c6b7a">Max 17° · Min 9°</text>
+  <path d="M456 230 C 500 200, 540 160, 590 170 S 680 240, 726 215 L 726 270 L 456 270 Z" fill="url(#curve)"/>
+  <path d="M456 230 C 500 200, 540 160, 590 170 S 680 240, 726 215" fill="none" stroke="#2f6fde" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="590" cy="170" r="6" fill="#e5484d"/>
+  <g fill="#5c6b7a" font-family="DejaVu Sans, Arial, sans-serif" font-size="12">
+    <text x="456" y="284">10h</text>
+    <text x="540" y="284">14h</text>
+    <text x="624" y="284">18h</text>
+    <text x="704" y="284">22h</text>
+  </g>
+
+  <!-- alert badge -->
+  <rect x="434" y="322" width="320" height="64" rx="16" fill="#000000" opacity="0.25"/>
+  <rect x="430" y="314" width="320" height="64" rx="16" fill="#fff4e5"/>
+  <path d="M466 330 l20 34 h-40 z" fill="#f08c00"/>
+  <rect x="464" y="341" width="4" height="12" rx="2" fill="#ffffff"/>
+  <circle cx="466" cy="358" r="2.5" fill="#ffffff"/>
+  <text x="500" y="352" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="bold" fill="#8a4b00">Orange · Thunderstorms</text>
+  <text x="500" y="370" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#8a4b00">until Sun 6:00</text>
+
+  <!-- title -->
+  <text x="50" y="440" font-family="DejaVu Sans, Arial, sans-serif" font-size="52" font-weight="bold" fill="#ffffff">Google Weather</text>
+  <text x="52" y="482" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" fill="#cfe3ff">for Gladys Assistant · forecasts, alerts, scenes</text>
+</svg>
