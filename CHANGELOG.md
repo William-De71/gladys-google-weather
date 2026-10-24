@@ -5,6 +5,12 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). This file is generated at
 each release from the Conventional Commits: do not edit it by hand.
 
+## [0.1.1] - 2026-10-24
+
+### Security
+
+- **security:** build the image on Node.js 24.22.1 or later ([cf12e53](https://github.com/William-De71/gladys-google-weather/commit/cf12e53bde55ea81318a5be5f3cee021743b6e00))
+
 ## [0.1.0] - 2026-10-17
 
 ### Added
@@ -17,4 +23,5 @@ each release from the Conventional Commits: do not edit it by hand.
 - A location without Google weather data makes Gladys fall through to the next weather provider.
 - English, French, German and Spanish everywhere: settings, widgets, scenes and documentation.
 
+[0.1.1]: https://github.com/William-De71/gladys-google-weather/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/William-De71/gladys-google-weather/releases/tag/v0.1.0
