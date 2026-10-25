@@ -5,7 +5,7 @@
 [![Licence : Apache-2.0](https://img.shields.io/badge/licence-Apache--2.0-blue.svg)](LICENSE)
 [![Dernière version](https://img.shields.io/github/v/release/William-De71/gladys-google-weather?sort=semver)](https://github.com/William-De71/gladys-google-weather/releases)
 [![CI](https://img.shields.io/github/actions/workflow/status/William-De71/gladys-google-weather/release.yml?branch=main&label=CI)](https://github.com/William-De71/gladys-google-weather/actions/workflows/release.yml)
-[![Gladys](https://img.shields.io/badge/Gladys-%E2%89%A5%205.1.1-2f6fb5)](https://gladysassistant.com)
+[![Gladys](https://img.shields.io/badge/Gladys-%E2%89%A5%205.3.0-2f6fb5)](https://gladysassistant.com)
 
 ![Google Weather pour Gladys Assistant](cover.jpg)
 
@@ -79,7 +79,7 @@ L'intégration demande 24 heures et 10 jours en une seule page chacun (l'API ren
 
 ## Prérequis
 
-- Gladys **5.1.1** ou plus récent (les versions antérieures ne peuvent pas installer l'intégration : widgets et scènes).
+- Gladys **5.3.0** ou plus récent (les versions antérieures ne peuvent pas installer l'intégration : widgets et scènes, mots-clés du catalogue de Gladys 5.3).
 - Une maison localisée dans Gladys.
 - Un projet Google Cloud avec un compte de facturation, la **Weather API** activée et une clé API, de préférence **restreinte à la Weather API** (et à votre IP publique si elle est fixe). Pas à pas dans la [documentation](docs/fr.md#configuration).
 

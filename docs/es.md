@@ -17,7 +17,7 @@ Todo pasa por los servidores de Google (solo nube), con **su propia clave API**:
 
 ## Requisitos
 
-- Gladys 5.1.1 o posterior.
+- Gladys 5.3.0 o posterior.
 - Una casa con ubicación (Ajustes → Casas): las alertas se comprueban para cada casa con ubicación.
 - Una cuenta de Google y un **proyecto de Google Cloud con una cuenta de facturación**. Google la exige para la Weather API, incluso dentro del uso gratuito.
 

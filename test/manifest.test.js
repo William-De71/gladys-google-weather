@@ -36,7 +36,7 @@ test('a weather integration, in lockstep with package.json, at 0.x until 1.0.0 i
   assert.equal(pkg.name, 'gladys-google-weather');
 });
 
-test('cloud transport only, the house coordinates as only permission, Gladys 5.1.1', () => {
+test('cloud transport only, the house coordinates as only permission, Gladys 5.3.0', () => {
   assert.deepEqual(manifest.transports, ['cloud']);
   assert.doesNotMatch(source('../src/app.js'), /GLADYS_PREFER_LOCAL|publishTransports/);
   assert.equal(manifest.location, true, 'the alert watcher reads the houses');
@@ -45,7 +45,7 @@ test('cloud transport only, the house coordinates as only permission, Gladys 5.1
     assert.equal(manifest[key], undefined, key);
   }
   assert.doesNotMatch(source('../src/widgets.js'), /fields:/, 'no button form: 5.1 is enough');
-  assert.equal(manifest.gladys_version, '>=5.1.1');
+  assert.equal(manifest.gladys_version, '>=5.3.0');
 });
 
 test('declares exactly the scene triggers, actions and widgets the code handles', () => {
@@ -165,4 +165,14 @@ test('no host other than the documented ones in the code', () => {
     'vigilance.meteofrance.fr',
     'weather.googleapis.com',
   ]);
+});
+
+test('catalog keywords and countries of Gladys 5.3.0', () => {
+  assert.equal(manifest.gladys_version, '>=5.3.0');
+  const keywords = manifest.keywords.map((keyword) => keyword.trim().toLowerCase());
+  assert.ok(keywords.length >= 1 && keywords.length <= 10, 'one to ten keywords');
+  keywords.forEach((keyword) => assert.ok(keyword.length >= 2 && keyword.length <= 30, keyword));
+  assert.equal(new Set(keywords).size, keywords.length, 'unique once trimmed and lowercased');
+  // Usable everywhere: no `countries`, the catalog shows it in every country.
+  assert.equal(manifest.countries, undefined);
 });

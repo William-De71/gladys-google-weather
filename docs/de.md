@@ -17,7 +17,7 @@ Alles läuft über die Server von Google (nur Cloud), mit **deinem eigenen API-S
 
 ## Voraussetzungen
 
-- Gladys 5.1.1 oder neuer.
+- Gladys 5.3.0 oder neuer.
 - Ein Zuhause mit Standort (Einstellungen → Zuhause): Die Warnungen werden für jedes Zuhause mit Standort geprüft.
 - Ein Google-Konto und ein **Google-Cloud-Projekt mit Rechnungskonto**. Google verlangt es für die Weather API, auch im kostenlosen Rahmen.
 
